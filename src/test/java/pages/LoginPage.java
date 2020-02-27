@@ -3,9 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.sql.Driver;
-
+import utilities.Driver;
 
 
 public class LoginPage {
@@ -20,7 +18,6 @@ public class LoginPage {
     @FindBy (xpath = "//button[@type=\"submit\"]")
     public WebElement submitButton;
 
-    //Iryna's elements:----------------------------------------
     @FindBy(id = "login")
     public WebElement emailInput;
 
