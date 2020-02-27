@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features  = "src/test/resources/features",
         glue = "steps_defenitions",
         dryRun = false,
-        tags = "@smartOrder"
+        tags = "@"
 )
 
 public class CukesRunner {
