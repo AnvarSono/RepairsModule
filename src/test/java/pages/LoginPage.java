@@ -1,4 +1,34 @@
 package pages;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import java.sql.Driver;
+
+
+
 public class LoginPage {
+    public LoginPage(){
+
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+    @FindBy(xpath = "//input[@id=\"login\"]")
+    public WebElement eMailAdd;
+    @FindBy(xpath = "//input[@id=\"password\"]")
+    public WebElement passWord;
+    @FindBy (xpath = "//button[@type=\"submit\"]")
+    public WebElement submitButton;
+
+    //Iryna's elements:----------------------------------------
+    @FindBy(id = "login")
+    public WebElement emailInput;
+
+    @FindBy(id = "password")
+    public WebElement passwordInput;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement logInButton;
+    //-----------------------------------------------------------
+
 }
